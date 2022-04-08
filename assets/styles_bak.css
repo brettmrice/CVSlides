@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+
+  background-image: url('imgs/au.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.content {
+  top: 50px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+ul {
+  height: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #003359;
+}
+
+li {
+  float: left;
+}
+
+topli {}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  display: block;
+  background-color: #a5acaf;
+}
+
+li > .dropdown {
+  display: inline-block;
+}
+
+li > .active, .dropdown:active {
+  background-color: #a5acaf;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-bottom-color: #44D62C;
+}
+
+.nav-title {
+  display: inline-block;
+  font-size: 150%;
+  text-align: center;
+  color: white;font-weight: bold;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 9998;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 42px;
+  background-color: #003359;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.loader {
+  border: 16px solid #002f55;
+  border-radius: 50%;
+  border-top: 16px solid #002f55;
+  border-right: 16px solid #002f55;
+  border-bottom: 16px solid #64A0C8;
+  border-left: 16px solid #44D62C;
+  width: 40vw;
+  height: 40vw;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  display: block;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  position:absolute;
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.holds-the-iframe {
+  top: 50px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background-image: url('imgs/au.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
