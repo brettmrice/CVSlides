@@ -18,10 +18,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  padding: 12px;
+  font-size: 14px;
+  padding: 10px;
 }
 
 .topnav a:hover {
@@ -39,26 +38,29 @@ body {
 }
 
 /* Left-aligned section inside the top navigation */
-.topnav-left {
+.topnav-left a {
   float: left;
 }
 
 /* Centered section inside the top navigation */
 .topnav-centered {
-  float: none;
+  float: left;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
 }
-
+/*
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav-centered a {
     display: none;
   }
   .topnav a.icon {
@@ -68,7 +70,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
+  .topnav.responsive  {
     position: relative;
   }
   .topnav.responsive .icon {
@@ -82,10 +84,11 @@ body {
     text-align: left;
   }
 }
-
+*/
 .holds-iframe {
   top: 45px;
   bottom: 0;
   width: 100%;
   position: absolute;
+  z-index: -1;
 }
